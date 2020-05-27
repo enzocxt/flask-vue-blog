@@ -1,0 +1,2 @@
+FLASK_APP=wablog.py
+FLASK_DEBUG=1
