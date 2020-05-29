@@ -32,4 +32,5 @@ def create_app(config_class=Config):
     return app
 
 
-from app import models
+from app.models import User
+# from app import models
