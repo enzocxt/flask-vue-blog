@@ -6,4 +6,5 @@ bp = Blueprint('api', __name__)
 from app.api import (
     tic,
     users,
+    tokens,
 )
