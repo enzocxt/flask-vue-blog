@@ -51,6 +51,7 @@ export default {
     onSubmit (e) {
       this.registerForm.submitted = true  // 先更新状态
       this.registerForm.errors = 0
+      // 信息检查
       if (!this.registerForm.username) {
         this.registerForm.errors++
         this.registerForm.usernameError = 'Username required.'
@@ -76,6 +77,7 @@ export default {
         // 表单验证没通过时，不继续往下执行，即不会通过 axios 调用后端API
         return false
       }
+      
       const path = 'http://localhost:5000/api/users'
       const payload = {
         username: this.registerForm.username,
